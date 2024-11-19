@@ -1,2 +1,19 @@
-instance/
+# Running in dev mode created this 
+# directory, so I'm gonna ignore it:
 flaskr/__pycache__
+
+# These contents are provided by
+# the flaskr demo directly: 
+.venv/
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
