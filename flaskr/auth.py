@@ -32,8 +32,9 @@ def register():
                 )
                 db.commit()
             except db.IntegrityError:
-                error = f"User {username} is already taken"
+                error = f"Username is already taken"
             else:
+                flash("Welcome to Flaskr")
                 return redirect(url_for("auth.login"))
 
         flash(error)
