@@ -28,7 +28,7 @@ def create():
         error = None
         
         if not title:
-            error = 'Title is required'
+            error = 'A title is required for this action'
         
         if error is not None:
             flash(error)
