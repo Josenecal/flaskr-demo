@@ -80,4 +80,4 @@ def test_update(client, auth, app):
 def test_create_update_validate(client, auth, path):
     auth.login()
     response = client.post(path, data={'title': '', 'body': ''})
-    assert b'Title is required.' in response.data
+    assert b'A title is required for this action' in response.data
